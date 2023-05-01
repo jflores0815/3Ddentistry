@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link type="text/css" rel="stylesheet" href="/src/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/examples/jsm/script/script.js"></script>
+    <div class="controls">
+        <div class="info">
+            <div class="info__message">
+                <p><strong>&nbsp;Grab&nbsp;</strong> to rotate teeth. <strong>&nbsp;Scroll&nbsp;</strong> to zoom. <strong>&nbsp;Drag&nbsp;</strong> swatches to view more.</p>
+            </div>
+        </div>
+        <!-- This tray will be filled with colors via JS, and the ability to slide this panel will be added in with a lightweight slider script (no dependency used for this) -->
+        <div id="js-tray" class="tray">
+            <div id="js-tray-slide" class="tray__slide"></div>
+        </div>
+    </div>
+  </body>
+</html>
